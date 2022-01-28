@@ -12,12 +12,15 @@ public class FrontEndUI {
 		User brandon = new User("Brandon", "Lomaine", 3 , "bLomaine", 22);
 		User terry = new User("Terry", "Somalier", 4 , "somDay21", 23 );
 		
-		userDatabase.addUser(jerry);
-		userDatabase.addUser(mikael);
-		userDatabase.addUser(brandon);
-		userDatabase.addUser(terry);
+//		userDatabase.addUser(jerry);
+//		userDatabase.addUser(mikael);
+//		userDatabase.addUser(brandon);
+//		userDatabase.addUser(terry);
+//		
+//		userDatabase.viewAllUsers();
 		
-		userDatabase.viewAllUsers();
+		AWSDatabase userDB = new AWSDatabase();
+		userDB.createTable();
 	}
 
 }
